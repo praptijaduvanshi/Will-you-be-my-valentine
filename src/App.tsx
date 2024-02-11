@@ -16,6 +16,7 @@ const phrases = [
   "Sure sure sure sure sure?",
   "Sure sure sure sure sure sure?",
   "Sure sure sure sure sure sure sure?",
+  "Change of heart yet?"
 ]
 
 function App() {
