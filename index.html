@@ -8,6 +8,29 @@
   </head>
   <body>
     <div id="root"></div>
+    <script type="module">
+        document.addEventListener('mousemove', function(e){
+        let body= document.querySelector('body');
+        let heart= document.createElement('span');
+        const SPACE_BETWEEN = 20;
+        let x= e.clientX + SPACE_BETWEEN;
+        let y= e.clientY + SPACE_BETWEEN;
+        heart.style.left= x + 'px';
+        heart.style.top= y+ 'px';
+
+        let size= (Math.random()*80) + 20;
+        heart.style.width= size + 'px';
+        heart.style.height= size + 'px';
+
+        let transformValue= Math.random()*360;
+        heart.style.transform= 'rotate('+ transformValue +'deg)';
+        body.appendChild(heart);
+
+        setTimeout(function(){
+          heart.remove();
+        }, 300);
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
