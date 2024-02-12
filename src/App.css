@@ -166,7 +166,7 @@ span::before {
     position: absolute;
     width: 60px;
     height: 50px;
-    background: url(heart.png);
+    background: url(/public/heart.png);
     background-size: contain;
     background-position: center;
     animation: moveShape 2s linear infinite;
